@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1")
-public class Message {
+public class MessageController {
 
     @GetMapping("/message")
     public ResponseEntity<String> displayMessage(){
-        var message = "Congratulation! Your Spring boot app successfully deploy on azure";
+        var message = "Congratulation! Your First Spring boot app successfully deploy on azure";
         return ResponseEntity.ok(message);
     }
 }
